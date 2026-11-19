@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemat Energi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Library Grafik -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">⚡ HematEnergi</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#statistik">Statistik</a>
+        <a href="#analisis">Analisis</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+
+    <div class="content">
+        <p class="small-title">KAMPANYE HEMAT ENERGI</p>
+
+        <h1>
+            Hemat Energi,
+            <span>Jaga Masa Depan.</span>
+        </h1>
+
+        <p class="description">
+            Mari mulai menggunakan energi dengan bijak.
+            Kebiasaan kecil seperti mematikan lampu dan perangkat
+            elektronik yang tidak digunakan dapat membantu menjaga lingkungan.
+        </p>
+
+        <button id="actionButton">
+            Mulai Hemat Energi
+        </button>
+    </div>
+
+    <div class="illustration">
+        <div class="circle">⚡</div>
+
+        <div class="card card-one">
+            💡 Matikan lampu
+        </div>
+
+        <div class="card card-two">
+            🌱 Jaga lingkungan
+        </div>
+    </div>
+
+</section>
+
+<!-- TENTANG -->
+<section class="tentang" id="tentang">
+
+    <h2>Mengapa Hemat Energi?</h2>
+
+    <p>
+        Hemat energi penting untuk membangun lingkungan sekolah
+        yang lebih peduli dan bertanggung jawab terhadap penggunaan energi.
+        Dengan kebiasaan sederhana, kita dapat mengurangi pemborosan listrik.
+    </p>
+
+</section>
+
+<!-- STATISTIK -->
+<section class="statistik" id="statistik">
+
+    <div class="section-title">
+        <p>DATA PENGGUNAAN ENERGI</p>
+        <h2>Statistik Hemat Energi</h2>
+        <span>Informasi penggunaan dan penghematan listrik.</span>
+    </div>
+
+    <div class="stat-cards">
+
+        <div class="stat-card">
+            <p>Total Penggunaan Listrik</p>
+            <h3 id="totalUsage">0 kWh</h3>
+            <small>Selama 6 bulan</small>
+        </div>
+
+        <div class="stat-card">
+            <p>Penghematan Energi</p>
+            <h3 id="savingValue">0%</h3>
+            <small>Dari penggunaan sebelumnya</small>
+        </div>
+
+        <div class="stat-card">
+            <p>Kebiasaan Hemat Energi</p>
+            <h3 id="habitValue">0%</h3>
+            <small>Rata-rata kebiasaan positif</small>
+        </div>
+
+    </div>
+
+    <div class="chart-grid">
+
+        <div class="chart-box">
+            <h3>Penggunaan Listrik Bulanan</h3>
+            <p>Jumlah penggunaan listrik dalam kWh.</p>
+
+            <div class="chart-area">
+                <canvas id="usageChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-box">
+            <h3>Perbandingan Penggunaan Listrik</h3>
+            <p>Sebelum dan sesudah penghematan.</p>
+
+            <div class="chart-area">
+                <canvas id="comparisonChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-box full">
+            <h3>Kebiasaan Hemat Energi</h3>
+            <p>Persentase penerapan kebiasaan hemat energi.</p>
+
+            <div class="chart-area">
+                <canvas id="habitChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="data-note">
+        <strong>Catatan:</strong>
+        Data yang ditampilkan merupakan data simulasi untuk contoh
+        visualisasi dan bukan hasil survei sebenarnya.
+    </div>
+
+</section>
+
+<!-- ANALISIS -->
+<section class="analisis" id="analisis">
+
+    <div class="section-title">
+        <p>HASIL PENGAMATAN</p>
+        <h2>Analisis & Rekomendasi</h2>
+        <span>Kesimpulan berdasarkan data penggunaan energi.</span>
+    </div>
+
+    <div class="analysis-grid">
+
+        <div class="analysis-box">
+            <div class="analysis-icon">📊</div>
+            <h3>Hasil Analisis</h3>
+
+            <p id="analysisText">
+                Memproses data...
+            </p>
+        </div>
+
+        <div class="analysis-box">
+            <div class="analysis-icon">💡</div>
+            <h3>Rekomendasi</h3>
+
+            <ul id="recommendationList"></ul>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>⚡ Hemat Energi</p>
+    <small>© 2026 Kampanye Hemat Energi</small>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
